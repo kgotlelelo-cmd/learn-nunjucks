@@ -1,0 +1,5 @@
+{% import "macros.njk" as macros %}
+
+{% for user in users %}
+    {{ macros.name(user) }}
+{% endfor %}

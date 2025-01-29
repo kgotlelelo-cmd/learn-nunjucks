@@ -1,0 +1,8 @@
+{% macro name(user) %}
+    <li>{{ user }}</li>
+    {% if user == 'Bob' %}
+    <p>Hello Bob</p>
+    {% else %}
+    <p>Hello stranger</p>
+    {% endif %}
+{% endmacro %}

@@ -4,7 +4,8 @@ const routes      = express.Router();
 routes.get('/', (req, res) => {
   return res.render('layout', {
     title: 'Home',
-    message: 'Hello World'
+    message: 'Hello World',
+    users: ["Alice", "Bob", "Carol", "Dan"]
   });
 });
 
